@@ -27,6 +27,7 @@ a.btn {
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
 }
 
 h1,
@@ -155,6 +156,69 @@ a.btn:hover {
   line-height: 1.4em;
 }
 /* Features Section ENd */
+/*************************** About Hotel Start ***************************/
+.about , .user_review{
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+}
+.about {
+  color: #333;
+  padding: 2em 1.25em;
+}
+
+.about .about__details {
+  padding-bottom: 2rem;
+}
+
+.section_title {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.about .section_content p {
+  margin-bottom: 1rem;
+  line-height: 1.75rem;
+}
+.about .about__img {
+  display: flex;
+  justify-content: center;
+}
+.about .about__img img{
+  max-width: 500px;
+  width: 100%;
+  border-radius: 50%;
+}
+.feedbacks {
+  background: url(./images/test-bg.jpg) no-repeat;
+  background-position: top;
+  padding: 100px 1rem 30px;
+}
+.feedbacks .section_title {
+  color: #f7f7f7;
+}
+
+.user_review {
+  color: #333;
+  background-color: #f7a863a4;
+  border-radius: 10px;
+  margin-bottom: 2.5rem;
+  padding: 1.25rem 1.25rem;
+}
+.user_review .user__profile {
+  float: left;
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 1.25rem;
+}
+
+.user_review .user__content {
+  line-height: 1.75rem;
+  margin-top: 10px;
+}
+/*************************** About Hotel End ***************************/
 /* Footer section start */
 footer {
   background-color: var(--clr-bg);
@@ -191,5 +255,16 @@ footer p {
   .features-section {
     display: flex;
     justify-content: center;
+  }
+
+  .about {
+    display: flex;
+  }
+
+  .about__details {
+    flex-basis: 60%;
+  }
+  .about__img {
+    padding: 2rem 1.5rem;
   }
 }
